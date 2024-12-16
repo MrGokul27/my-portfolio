@@ -43,11 +43,7 @@
 }
 
 /* Social Icons */
-.social-icons {
-  margin-top: 30px;
-}
-
-.social-icons a {
+.hero-section .social-icons a {
   font-size: 2rem;
   margin: 0 15px;
   color: var(--highlight-color);
@@ -62,6 +58,14 @@
   color: #ffffff;
 }
 
-.social-icons a:hover {
+.hero-section .social-icons a:hover {
   color: var(--nav-text-color);
+}
+
+.hero-section .dark-resume-btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--nav-text-color);
+  box-shadow: 0px 0px 10px 0px var(--highlight-color);
+  border-radius: 25px;
 }

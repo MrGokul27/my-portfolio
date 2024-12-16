@@ -59,7 +59,7 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="py-5 text-end">
+              <div className="py-5 text-end mt-5">
                 {theme === "light" ? (
                   <img src={jpLight} alt="" className="img-fluid" />
                 ) : (
@@ -69,43 +69,56 @@ const Home = () => {
                   <span>I AM</span> GOKULANATH
                 </h2>
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris sollicitudin egestas neque nec volutpat. Cras rhoncus
-                  magna id tellus sodales viverra eu eu nisi. Nam venenatis
-                  mattis dictum. Praesent venenatis leo dui, sed auctor eros
-                  posuere ac. Etiam mauris augue, laoreet quis ex ut,
-                  sollicitudin cursus orci. Donec in est vitae sem scelerisque
-                  tempor sit amet eu sem.
+                  Creative Web Developer with 1+ year of experience and a
+                  passion for developing user-friendly websites. Collaborated
+                  with a team of developers to implement responsive web design,
+                  ensuring optimal user experience across different devices and
+                  screen sizes.
                 </p>
-                <div className="social-icons">
-                  <a
-                    href="https://www.instagram.com/yourprofile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/gokulanath-jp-464465261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://github.com/dashboard"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://wa.me/yourphonenumber"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-whatsapp"></i>
-                  </a>
+                <div className="d-flex align-items-center justify-content-end mt-md-5 mt-3">
+                  <div className="resume-button me-5">
+                    <a
+                      href="/Gokulanath-resume.pdf"
+                      download="Gokulanath_Resume"
+                      className="btn dark-resume-btn"
+                    >
+                      Resume
+                      <i
+                        className="fas fa-cloud-download-alt ms-3"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                  <div className="social-icons">
+                    <a
+                      href="https://www.instagram.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/gokulanath-jp-464465261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://github.com/dashboard"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://wa.me/yourphonenumber"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-whatsapp"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
