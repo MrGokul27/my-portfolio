@@ -1,0 +1,67 @@
+.hero-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.hero-section h2 {
+  font-size: 50px;
+  color: var(--highlight-color);
+  font-weight: 700;
+  margin-top: 20px;
+  letter-spacing: -1px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  line-height: 33px;
+  color: var(--nav-text-color);
+}
+
+.hero-section span {
+  color: var(--nav-text-color);
+}
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--nav-text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .home h2 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: var(--highlight-color);
+  transition: color 0.3s ease-in-out;
+}
+
+[data-theme="light"] .social-icons a {
+  color: #000000;
+}
+
+[data-theme="dark"] .social-icons a {
+  color: #ffffff;
+}
+
+.social-icons a:hover {
+  color: var(--nav-text-color);
+}
