@@ -1,0 +1,103 @@
+.contact-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.contact-section .contact-form {
+  border: 2px solid #d9d9d950;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0px -8px 28px 0px #d9d9d950;
+  overflow: hidden;
+}
+
+.contact-section .contact-form label {
+  color: var(--text-color) !important;
+}
+
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
+  color: var(--text-color);
+  background-color: transparent !important;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #d9d9d950 !important;
+}
+
+.contact-section .contact-form .contact-submit-btn {
+  color: var(--text-color);
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid #d9d9d950 !important;
+}
+
+.contact-section .contact-form .contact-submit-btn:hover {
+  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid #b336ff70 !important;
+}
+
+/* Social Icons */
+.contact-section .social-icons a {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: var(--highlight-color);
+  transition: color 0.3s ease-in-out;
+}
+
+[data-theme="light"] .social-icons a {
+  color: #000000;
+}
+
+[data-theme="dark"] .social-icons a {
+  color: #ffffff;
+}
+
+.contact-section .social-icons a:hover {
+  color: var(--nav-text-color);
+}
+/* ******************** */
+
+.contact-section .form-curve {
+  position: relative;
+  padding: 20px;
+}
+
+.contact-section .form-curve::before,
+.contact-section .form-curve::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ffffff90;
+}
+
+.contact-section .form-curve::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.contact-section .form-curve::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.contact-form .ant-input:focus,
+.contact-form .ant-input-focused,
+.contact-form .ant-input:focus-within,
+.contact-form .ant-input-affix-wrapper-focused {
+  border-color: #b336ff70 !important;
+  box-shadow: 0 0 0 2px #b336ff40 !important;
+  outline: none;
+}
+
+.contact-form .ant-input-textarea:focus,
+.contact-form .ant-input-textarea:focus-within,
+.contact-form .ant-input-textarea-focused {
+  border-color: #b336ff70 !important;
+  box-shadow: 0 0 0 2px #b336ff40 !important;
+  outline: none;
+}

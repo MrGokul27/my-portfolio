@@ -59,7 +59,7 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="py-5 text-end mt-5">
+              <div className="py-5 text-end mt-md-5">
                 {theme === "light" ? (
                   <img src={jpLight} alt="" className="img-fluid" />
                 ) : (
@@ -75,8 +75,8 @@ const Home = () => {
                   ensuring optimal user experience across different devices and
                   screen sizes.
                 </p>
-                <div className="d-flex align-items-center justify-content-end mt-md-5 mt-3">
-                  <div className="resume-button me-5">
+                <div className="d-md-flex align-items-center justify-content-end mt-md-5 mt-3">
+                  <div className="resume-button me-md-5 mt-md-0 mt-4 text-md-end text-center">
                     <a
                       href="/Gokulanath-resume.pdf"
                       download="Gokulanath_Resume"
@@ -89,14 +89,7 @@ const Home = () => {
                       ></i>
                     </a>
                   </div>
-                  <div className="social-icons">
-                    <a
-                      href="https://www.instagram.com/yourprofile"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                  <div className="social-icons text-md-end text-center mt-md-0 mt-4">
                     <a
                       href="https://www.linkedin.com/in/gokulanath-jp-464465261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       target="_blank"
@@ -105,14 +98,21 @@ const Home = () => {
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <a
-                      href="https://github.com/dashboard"
+                      href="https://github.com/MrGokul27?tab=repositories"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <i className="fab fa-github"></i>
                     </a>
                     <a
-                      href="https://wa.me/yourphonenumber"
+                      href="https://www.instagram.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://wa.me/qr/OXQMTD3OIV24G1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

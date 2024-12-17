@@ -5,7 +5,7 @@
   padding: 10px 20px;
   background-color: var(--nav-bg-color);
   box-shadow: 0px -8px 26.2px 0px var(--highlight-color);
-  border-top: 1.5px solid #B336FF;
+  border-top: 1.5px solid #b336ff;
 }
 
 .logo {
@@ -80,4 +80,16 @@
   .mobile-menu-icon {
     display: block;
   }
+}
+
+/* footer */
+.footer-section {
+  background-color: var(--nav-bg-color);
+  box-shadow: 0px -0px 28px 0px var(--highlight-color);
+}
+
+.footer-section h2 {
+  color: var(--nav-text-color);
+  font-size: 16px;
+  font-weight: 600;
 }
