@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <nav className="navbar bebasneue py-4">
+    <nav className="navbar bradleyHand py-4">
       <div className="container-fluid">
         <div className="logo">WELCOME !</div>
 

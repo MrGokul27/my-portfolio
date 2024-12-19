@@ -1,0 +1,84 @@
+.about-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+.about-section h2 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.about-section h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.about-section h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.about-section .about-style-txt {
+  font-size: 18px;
+}
+
+/* Animation for the bounce effect */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-style-txt {
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.about-style-txt img {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.about-style-txt:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.about-style-txt:nth-child(2) {
+  animation-delay: 0.4s;
+}
+/* *********************** */
+
+/* About Me underline animation */
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.about-me {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.about-me::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  animation: underlineAnimation 5s ease-in-out infinite;
+}
+/* *********************** */

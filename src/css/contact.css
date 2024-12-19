@@ -12,6 +12,8 @@
 
 .contact-section .contact-form label {
   color: var(--text-color) !important;
+  font-size: 18px;
+  font-family: 'Bradley Hand ITC', cursive, sans-serif;
 }
 
 .contact-section .contact-form input,
@@ -21,6 +23,8 @@
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #d9d9d950 !important;
+  font-size: 16px;
+  font-family: 'Bradley Hand ITC', cursive, sans-serif;
 }
 
 .contact-section .contact-form .contact-submit-btn {
@@ -28,6 +32,8 @@
   background-color: transparent;
   border-radius: 25px;
   border: 2px solid #d9d9d950 !important;
+  font-size: 16px;
+  font-family: 'Bradley Hand ITC', cursive, sans-serif;
 }
 
 .contact-section .contact-form .contact-submit-btn:hover {

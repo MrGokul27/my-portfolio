@@ -62,3 +62,33 @@ a {
 a:hover {
   color: var(--link-hover-color);
 }
+
+.fa-arrow-down {
+  border: 1px solid #b336ff;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Bradley Hand ITC';
+  src: url('./assets/fonts/BRADHITC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bebasNeue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.bradleyHand {
+  font-family: 'Bradley Hand ITC', cursive, sans-serif;
+}
+/* ************ */

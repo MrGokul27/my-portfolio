@@ -13,8 +13,10 @@
 }
 
 .hero-section p {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 33px;
+  letter-spacing: 1px;
   color: var(--nav-text-color);
 }
 
@@ -69,4 +71,24 @@
   color: var(--nav-text-color);
   box-shadow: 0px 0px 10px 0px var(--highlight-color);
   border-radius: 25px;
+}
+
+/* Parallax effect */
+.parallax-effect {
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: background 0.5s ease-out;
+}
+
+/* Light and dark theme background images */
+[data-theme="light"] .parallax-effect {
+  background-image: url("../images/Profile.png");
+}
+
+[data-theme="dark"] .parallax-effect {
+  background-image: url("../images/Profile\ \(1\).png");
 }

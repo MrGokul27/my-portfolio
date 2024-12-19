@@ -36,7 +36,7 @@ const Contact = () => {
     <section id="contact" className="contact-section py-5">
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <div className="col-md-6">
+          <div className="col-md-7">
             <div className="form-curve my-md-5">
               <Form
                 name="contact_form"

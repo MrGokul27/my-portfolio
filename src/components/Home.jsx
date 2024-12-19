@@ -5,7 +5,7 @@ import jpDark from "../images/JP-dark.png";
 import jpLight from "../images/JP-light.png";
 import lightThemeLogo from "../images/bulb-lightmode.png";
 import darkThemeLogo from "../images/bulb-darkmode.png";
-import "../css/home.css";
+import "../css/home.css"; // Include the updated CSS file
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -17,6 +17,13 @@ const Home = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("about");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   useEffect(() => {
@@ -32,11 +39,10 @@ const Home = () => {
   return (
     <>
       {/* Theme Toggle Button */}
-
-      <section id="home" className="hero-section px-md-5 px-3">
+      <section id="home" className="hero-section px-md-5 px-3 bradleyHand">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 parallax-effect">
               <div className="position-relative">
                 <button
                   className="theme-toggle-btn"
@@ -50,13 +56,13 @@ const Home = () => {
                   )}
                 </button>
               </div>
-              <div className="text-center">
+              {/* <div className="text-center">
                 {theme === "light" ? (
                   <img src={myImageLight} alt="" className="img-fluid" />
                 ) : (
                   <img src={myImageDark} alt="" className="img-fluid" />
                 )}
-              </div>
+              </div> */}
             </div>
             <div className="col-md-6">
               <div className="py-5 text-end mt-md-5">
@@ -69,11 +75,12 @@ const Home = () => {
                   <span>I AM</span> GOKULANATH
                 </h2>
                 <p className="mt-4">
-                  Creative Web Developer with 1+ year of experience and a
-                  passion for developing user-friendly websites. Collaborated
-                  with a team of developers to implement responsive web design,
-                  ensuring optimal user experience across different devices and
-                  screen sizes.
+                  Results-driven Web Developer with 1+ years of experience in
+                  creating responsive, user-centric websites and applications.
+                  Skilled in ReactJS, JavaScript, Bootstrap 5, HTML, CSS. Adept
+                  at optimizing website performance, collaborating with
+                  cross-functional teams, and delivering projects on time with a
+                  focus on scalability and aesthetics.
                 </p>
                 <div className="d-md-flex align-items-center justify-content-end mt-md-5 mt-3">
                   <div className="resume-button me-md-5 mt-md-0 mt-4 text-md-end text-center">
@@ -123,8 +130,21 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="row">
+            <div className="col-12 text-center">
+              <div className="down-arrow-container">
+                <i
+                  className="fas fa-arrow-down"
+                  onClick={scrollToNextSection}
+                  style={{ cursor: "pointer" }}
+                ></i>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Other Components */}
       <About />
       <Projects />
       <Contact />
