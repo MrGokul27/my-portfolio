@@ -81,4 +81,14 @@
   background-color: #fff;
   animation: underlineAnimation 5s ease-in-out infinite;
 }
+
+.blur-image {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+.blur-image:hover {
+  filter: blur(0);
+}
+
 /* *********************** */

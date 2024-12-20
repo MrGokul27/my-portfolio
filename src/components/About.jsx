@@ -44,7 +44,7 @@ const About = () => {
           </div>
           <div className="col-md-6">
             <div className="text-center">
-              <img src={myImageAbout} alt="" className="img-fluid" />
+              <img src={myImageAbout} alt="" className="img-fluid blur-image" />
             </div>
             <div className="text-center">
               <p className="about-style-txt bradleyHand">
