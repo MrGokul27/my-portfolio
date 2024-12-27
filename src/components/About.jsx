@@ -6,7 +6,7 @@ import myImageAbout from "../images/myImageAbout.png";
 
 const About = () => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("contact");
+    const nextSection = document.getElementById("skills");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }

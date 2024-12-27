@@ -63,6 +63,7 @@
 .hero-section .social-icons a:hover {
   color: var(--nav-text-color);
 }
+
 /* ******************** */
 
 .hero-section .dark-resume-btn {
@@ -79,16 +80,16 @@
   overflow: hidden;
   background-size: contain;
   background-attachment: fixed;
-  background-position: left;
+  background-position: 0px 50px;
   background-repeat: no-repeat;
   transition: background 0.5s ease-out;
 }
 
 /* Light and dark theme background images */
 [data-theme="light"] .parallax-effect {
-  background-image: url("../images/Profile.png");
+  background-image: url("../images//my-image-home-light.png");
 }
 
 [data-theme="dark"] .parallax-effect {
-  background-image: url("../images/Profile\ \(1\).png");
+  background-image: url("../images/my-image-home-dark.png");
 }

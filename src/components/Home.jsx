@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import myImageDark from "../images/Profile.png";
-import myImageLight from "../images/Profile (1).png";
 import jpDark from "../images/JP-dark.png";
 import jpLight from "../images/JP-light.png";
 import lightThemeLogo from "../images/bulb-lightmode.png";
 import darkThemeLogo from "../images/bulb-darkmode.png";
-import "../css/home.css"; // Include the updated CSS file
+import "../css/home.css";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Skills from "./Skills";
 
 const Home = () => {
   const [theme, setTheme] = useState("dark");
@@ -56,13 +55,6 @@ const Home = () => {
                   )}
                 </button>
               </div>
-              {/* <div className="text-center">
-                {theme === "light" ? (
-                  <img src={myImageLight} alt="" className="img-fluid" />
-                ) : (
-                  <img src={myImageDark} alt="" className="img-fluid" />
-                )}
-              </div> */}
             </div>
             <div className="col-md-6">
               <div className="py-5 text-end mt-md-5">
@@ -146,6 +138,7 @@ const Home = () => {
 
       {/* Other Components */}
       <About />
+      <Skills />
       {/* <Projects /> */}
       <Contact />
     </>
