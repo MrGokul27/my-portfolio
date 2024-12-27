@@ -146,7 +146,7 @@ const Home = () => {
 
       {/* Other Components */}
       <About />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
     </>
   );

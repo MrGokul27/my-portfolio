@@ -6,7 +6,7 @@ import myImageAbout from "../images/myImageAbout.png";
 
 const About = () => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("projects");
+    const nextSection = document.getElementById("contact");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -16,18 +16,18 @@ const About = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 text-center bradleyHand">
-            <h1 className="about-me">ABOUT ME</h1>
+            <h1 className="section-heading-underline">ABOUT ME</h1>
           </div>
         </div>
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 position-relative">
             <div className="about-style-txt bradleyHand">
               <p>
                 My Qualifications
                 <img src={curveBend1} alt="" className="mt-3" />
               </p>
             </div>
-            <div className="bachelors-degree mt-md-5">
+            <div className="bachelors-degree">
               <h2 className="mb-3">B.Tech. in Information Technology</h2>
               <h3 className="mb-3">
                 Sri Manakula Vinayagar Engineering College, Puducherry, India
@@ -40,6 +40,10 @@ const About = () => {
                 CK School Of Practical Knowledge, Cuddalore, Tamil Nadu, India
               </h3>
               <h4>( 2016 - 2018 )</h4>
+            </div>
+            <div className="my-tech-skills position-absolute text-center">
+              <p className="mb-0">MY TECH </p>
+              <span>SKILLS</span>
             </div>
           </div>
           <div className="col-md-6">

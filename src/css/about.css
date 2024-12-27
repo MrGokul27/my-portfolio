@@ -3,15 +3,18 @@
   color: var(--text-color);
   min-height: 100vh;
 }
+
 .about-section h2 {
   font-size: 36px;
   letter-spacing: 2px;
   text-decoration: underline;
 }
+
 .about-section h3 {
   font-size: 24px;
   letter-spacing: 2px;
 }
+
 .about-section h4 {
   font-size: 20px;
   letter-spacing: 2px;
@@ -21,14 +24,73 @@
   font-size: 18px;
 }
 
+.blur-image {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+  width: 250px;
+}
+
+.blur-image:hover {
+  filter: blur(0);
+}
+
+.about-section .my-tech-skills h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.about-section .my-tech-skills span {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* Animation for the My Tech Skills */
+.about-section .my-tech-skills {
+  position: relative;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 22.33px 0px #B336FF;
+  border: 1px solid #B336FF;
+  right: 40%;
+}
+
+.about-section .my-tech-skills::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(179, 54, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: ripple 0.8s ease-out infinite;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(8);
+  }
+}
+
+/* *********************** */
+
 /* Animation for the bounce effect */
 @keyframes bounce {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -50,6 +112,7 @@
 .about-style-txt:nth-child(2) {
   animation-delay: 0.4s;
 }
+
 /* *********************** */
 
 /* About Me underline animation */
@@ -57,21 +120,23 @@
   0% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
 }
 
-.about-me {
+.section-heading-underline {
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
 }
 
-.about-me::after {
+.section-heading-underline::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -80,15 +145,6 @@
   height: 2px;
   background-color: #fff;
   animation: underlineAnimation 5s ease-in-out infinite;
-}
-
-.blur-image {
-  filter: blur(3px);
-  transition: filter 0.3s ease;
-}
-
-.blur-image:hover {
-  filter: blur(0);
 }
 
 /* *********************** */

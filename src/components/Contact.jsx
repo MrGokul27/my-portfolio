@@ -35,6 +35,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section py-5">
       <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 text-center bradleyHand">
+            <h1 className="section-heading-underline">CONTACT ME</h1>
+          </div>
+        </div>
         <div className="row justify-content-center">
           <div className="col-md-7">
             <div className="form-curve my-md-5">
