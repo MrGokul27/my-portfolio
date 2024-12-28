@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0b2d550.css",
+    "main.js": "/static/js/main.1a6e3315.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/myImageAbout.png": "/static/media/myImageAbout.8022029078fff9f3141e.png",
+    "static/media/my-image-home-light.png": "/static/media/my-image-home-light.17c48b52c9681a3dcdfa.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/my-image-home-dark.png": "/static/media/my-image-home-dark.660798feb1f6ab971689.png",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/BRADHITC.TTF": "/static/media/BRADHITC.c2aade93912989c88d52.TTF",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/bulb-darkmode.png": "/static/media/bulb-darkmode.c4389ba944a48d064960.png",
+    "static/media/bulb-lightmode.png": "/static/media/bulb-lightmode.2669f624078e28129983.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/index.html",
+    "static/media/curve-arrow-2.svg": "/static/media/curve-arrow-2.b7f8c860f00f88e50c59bed5263c4752.svg",
+    "static/media/curve-arrow-1.svg": "/static/media/curve-arrow-1.072545c8a37805e0f38ae0c933e6583c.svg",
+    "main.e0b2d550.css.map": "/static/css/main.e0b2d550.css.map",
+    "main.1a6e3315.js.map": "/static/js/main.1a6e3315.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0b2d550.css",
+    "static/js/main.1a6e3315.js"
+  ]
+}
