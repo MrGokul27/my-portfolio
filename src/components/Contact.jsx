@@ -162,7 +162,7 @@ const Contact = () => {
                         <i className="fab fa-github"></i>
                       </a>
                       <a
-                        href="https://www.instagram.com/yourprofile"
+                        href="https://www.instagram.com/mr_gokul_27/profilecard/?igsh=d3JveXd5dXAzZmZj"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
