@@ -1,31 +1,66 @@
 import React from "react";
+import "../css/project.css";
+import projectImage1 from "../images/project-image-1.png";
+import projectImage3 from "../images/project-image-2.png";
 
 const Projects = () => {
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("contact");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "A personal portfolio to showcase my work.",
+      image: projectImage1,
+      title: "CK Edge",
+      description: "CK Edge provides high-quality skill development courses to help you achieve your career goals.",
     },
     {
-      title: "E-Commerce Website",
-      description: "An online shopping platform built with React.",
+      image: projectImage1,
+      title: "Zenopus",
+      description: "Zen Opus, is a contemporary publishing house that acquired M/s Bookpub, a respected name in Gujarati literature.",
     },
     {
-      title: "To-Do App",
-      description: "A simple task management tool using React hooks.",
+      image: projectImage3,
+      title: "Ive's Clothing",
+      description: "Ive's Clothing is an online store featuring trendy apparel and accessories for every occasion and style.",
     },
   ];
 
   return (
-    <section id="projects" className="projects">
-      <h2>My Projects</h2>
-      <div className="projects-container">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+    <section id="projects" className="projects-section p-md-5 p-3 bebasNeue">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 text-center bradleyHand">
+            <h1 className="section-heading-underline">MY WORKS</h1>
           </div>
-        ))}
+        </div>
+        <div className="row mb-5 slider">
+          <div className="col-12 slide-track">
+            {projects.map((project, index) => (
+              <div key={index} className="col-md-6">
+                <div className="card projects-card p-3 mt-md-5 slide">
+                  <img src={project.image} alt={project.title} className="img-fluid" />
+                  <h3 className="mt-3">{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12 text-center">
+            <div className="down-arrow-container">
+              <i
+                className="fas fa-arrow-down"
+                onClick={scrollToNextSection}
+                style={{ cursor: "pointer" }}
+              ></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

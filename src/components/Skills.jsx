@@ -10,7 +10,7 @@ import skillImage7 from "../images/icons8-gitlab-48.png";
 
 const Skills = () => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("contact");
+    const nextSection = document.getElementById("projects");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }

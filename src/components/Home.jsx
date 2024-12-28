@@ -139,7 +139,7 @@ const Home = () => {
       {/* Other Components */}
       <About />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </>
   );
