@@ -41,7 +41,8 @@ const About = () => {
               </h3>
               <h4>( 2016 - 2018 )</h4>
             </div>
-            <div className="my-tech-skills position-absolute text-center">
+            <div className="my-tech-skills position-absolute text-center" onClick={scrollToNextSection}
+              style={{ cursor: "pointer" }}>
               <p className="mb-0">MY TECH </p>
               <span>SKILLS</span>
             </div>

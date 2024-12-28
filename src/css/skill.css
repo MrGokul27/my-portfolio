@@ -11,15 +11,26 @@
 }
 
 .skills-section .skills-card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.1);
-    background-color: #111;
-    border-radius: 10px;
-    transform: translateZ(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 150px;
     height: 150px;
+    background-color: #202022;
+    pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out;
+    box-shadow: 4px 4px 10px rgba(179, 54, 255, 0.5);
+
+    &:nth-child(even) {
+        transform: translateX(8px);
+    }
+
+    &:nth-child(n) {
+        transform: rotate(0deg);
+    }
 }
 
-.skills-section .skills-card:hover {
-    transform: translateY(-10px);
+.skills-section .skills-sec-card:hover>.skills-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(179, 54, 255, 0.8);
+    z-index: 10;
 }

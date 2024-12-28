@@ -43,7 +43,7 @@ const Skills = () => {
 
         <div className="row mt-3 mb-5 justify-content-center">
           {skills.map((skill, index) => (
-            <div key={index} className="col-md-3 col-6 d-flex justify-content-center">
+            <div key={index} className="col-md-3 col-6 d-flex justify-content-center skills-sec-card">
               <div className="card skills-card mt-4 border-0 rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={skill.image}
