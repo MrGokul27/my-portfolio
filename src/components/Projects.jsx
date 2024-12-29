@@ -52,6 +52,21 @@ const Projects = () => {
       title: "Ive's Clothing",
       description: "Ive's Clothing is an online store featuring trendy apparel and accessories for every occasion and style.",
     },
+    {
+      image: projectImage1,
+      title: "CK Edge",
+      description: "CK Edge provides high-quality skill development courses to help you achieve your career goals.",
+    },
+    {
+      image: projectImage1,
+      title: "Zenopus",
+      description: "Zen Opus, is a contemporary publishing house that acquired M/s Bookpub, a respected name in Gujarati literature.",
+    },
+    {
+      image: projectImage3,
+      title: "Ive's Clothing",
+      description: "Ive's Clothing is an online store featuring trendy apparel and accessories for every occasion and style.",
+    },
   ];
 
   return (

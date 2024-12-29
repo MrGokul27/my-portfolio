@@ -38,14 +38,14 @@ const Home = () => {
   return (
     <>
       {/* Theme Toggle Button */}
-      <section id="home" className="hero-section p-lg-5 p-3 bradleyHand">
+      <section id="home" className="hero-section px-lg-5 px-3 bradleyHand">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-12 parallax-effect">
               <div className="position-relative">
                 <button
                   className="theme-toggle-btn"
-                  onClick={toggleTheme}
+                  // onClick={toggleTheme}
                   aria-label="Toggle theme"
                 >
                   {theme === "light" ? (

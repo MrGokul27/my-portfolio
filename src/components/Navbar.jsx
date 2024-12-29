@@ -1,13 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../css/navbar.css";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("dark");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleScrollToSection = (e, targetId) => {
+    e.preventDefault();
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    } else {
+      document.getElementById(targetId)?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {
@@ -21,7 +40,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <nav className="navbar bradleyHand p-lg-5 p-3">
+    <nav className="navbar bradleyHand px-lg-5 px-3 py-4">
       <div className="container-fluid">
         <div className="logo">WELCOME !</div>
 
@@ -41,19 +60,29 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className={`nav-links ${isMobileMenuOpen ? "mobile-active" : "mt-md-0 mt-3"}`}>
           <li>
-            <NavLink to="/">HOME</NavLink>
+            <a href="#home" onClick={(e) => handleScrollToSection(e, "home")}>
+              HOME
+            </a>
           </li>
           <li>
-            <NavLink to="#about">ABOUT</NavLink>
+            <a href="#about" onClick={(e) => handleScrollToSection(e, "about")}>
+              ABOUT
+            </a>
           </li>
           <li>
-            <NavLink to="#skills">SKILLS</NavLink>
+            <a href="#skills" onClick={(e) => handleScrollToSection(e, "skills")}>
+              SKILLS
+            </a>
           </li>
           <li>
-            <NavLink to="#projects">PROJECTS</NavLink>
+            <a href="#projects" onClick={(e) => handleScrollToSection(e, "projects")}>
+              PROJECTS
+            </a>
           </li>
           <li>
-            <NavLink to="#contact">CONTACT</NavLink>
+            <a href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
+              CONTACT
+            </a>
           </li>
         </ul>
       </div>
