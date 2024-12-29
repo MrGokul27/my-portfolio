@@ -108,3 +108,9 @@
   box-shadow: 0 0 0 2px #b336ff40 !important;
   outline: none;
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact-section .social-icons a {
+    font-size: 20px;
+  }
+}

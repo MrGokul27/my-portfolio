@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <nav className="navbar bradleyHand py-4">
+    <nav className="navbar bradleyHand p-lg-5 p-3">
       <div className="container-fluid">
         <div className="logo">WELCOME !</div>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links */}
-        <ul className={`nav-links ${isMobileMenuOpen ? "mobile-active" : ""}`}>
+        <ul className={`nav-links ${isMobileMenuOpen ? "mobile-active" : "mt-md-0 mt-3"}`}>
           <li>
             <NavLink to="/">HOME</NavLink>
           </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <NavLink to="#projects">PROJECTS</NavLink>
           </li>
           <li>
-            <NavLink to="#contact">CONTACT ME</NavLink>
+            <NavLink to="#contact">CONTACT</NavLink>
           </li>
         </ul>
       </div>

@@ -38,10 +38,10 @@ const Home = () => {
   return (
     <>
       {/* Theme Toggle Button */}
-      <section id="home" className="hero-section px-md-5 px-3 bradleyHand">
+      <section id="home" className="hero-section p-lg-5 p-3 bradleyHand">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6 parallax-effect">
+            <div className="col-lg-6 col-md-12 parallax-effect">
               <div className="position-relative">
                 <button
                   className="theme-toggle-btn"
@@ -56,12 +56,12 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="py-5 text-end mt-md-5">
+            <div className="col-lg-6 col-md-12">
+              <div className="py-lg-5 py-3 text-md-end text-start mt-lg-5">
                 {theme === "light" ? (
-                  <img src={jpLight} alt="" className="img-fluid" />
+                  <img src={jpLight} alt="" className="img-fluid jp-img" />
                 ) : (
-                  <img src={jpDark} alt="" className="img-fluid" />
+                  <img src={jpDark} alt="" className="img-fluid jp-img" />
                 )}
                 <h2>
                   <span>I AM</span> GOKULANATH

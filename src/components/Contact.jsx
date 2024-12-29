@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section py-5">
+    <section id="contact" className="contact-section p-lg-5 p-3 pb-md-0 pb-5 bebasNeue">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 text-center bradleyHand">
@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-7">
+          <div className="col-lg-7 col-md-10">
             <div className="form-curve my-md-5">
               <Form
                 name="contact_form"
@@ -50,7 +50,7 @@ const Contact = () => {
                 className="contact-form p-md-5 p-3"
               >
                 {/* First Name and Last Name */}
-                <Row gutter={[150, 16]}>
+                <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
                       label="FIRST NAME"
@@ -82,7 +82,7 @@ const Contact = () => {
                 </Row>
 
                 {/* Email and Phone Number */}
-                <Row gutter={[150, 16]}>
+                <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
                       label="EMAIL ID"
@@ -115,7 +115,7 @@ const Contact = () => {
                 </Row>
 
                 {/* Message */}
-                <Row gutter={[150, 16]}>
+                <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
                       label="MESSAGE"
@@ -133,7 +133,7 @@ const Contact = () => {
                 </Row>
 
                 {/* Submit Button */}
-                <Row gutter={[150, 16]} className="align-items-center">
+                <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]} className="align-items-center">
                   <Col xs={24} md={12}>
                     <Form.Item>
                       <Button
@@ -146,7 +146,7 @@ const Contact = () => {
                     </Form.Item>
                   </Col>
                   <Col xs={24} md={12} className="text-md-end text-center">
-                    <div className="social-icons">
+                    <div className="social-icons  mt-3">
                       <a
                         href="https://www.linkedin.com/in/gokulanath-jp-464465261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         target="_blank"

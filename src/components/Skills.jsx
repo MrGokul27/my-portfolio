@@ -26,10 +26,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section p-md-5 p-3 bebasNeue">
+    <section id="skills" className="skills-section p-lg-5 p-3 bebasNeue">
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <div className="col-md-10 text-center bradleyHand">
+          <div className="col-lg-10 text-center bradleyHand">
             <h1 className="section-heading-underline">MY SKILLS</h1>
             <p className="mt-4">
               Proficient in Frontend Development using ReactJS, JavaScript,

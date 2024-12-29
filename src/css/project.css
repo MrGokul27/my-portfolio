@@ -63,3 +63,13 @@
 .projects-section .slide-track:hover {
     animation-play-state: paused;
 }
+
+@media screen and (max-width: 768px) {
+    .projects-section .projects-card h3 {
+        font-size: 28px;
+    }
+
+    .projects-section .projects-card p {
+        font-size: 16px;
+    }
+}

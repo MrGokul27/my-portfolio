@@ -12,7 +12,7 @@ const About = () => {
     }
   };
   return (
-    <section id="about" className="about-section p-md-5 p-3 bebasNeue">
+    <section id="about" className="about-section p-lg-5 p-3 bebasNeue">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 text-center bradleyHand">
@@ -20,7 +20,7 @@ const About = () => {
           </div>
         </div>
         <div className="row align-items-center">
-          <div className="col-md-6 position-relative">
+          <div className="col-lg-6 col-md-7 position-relative about-second-sec">
             <div className="about-style-txt bradleyHand">
               <p>
                 My Qualifications
@@ -47,7 +47,7 @@ const About = () => {
               <span>SKILLS</span>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-5">
             <div className="text-center">
               <img src={myImageAbout} alt="" className="img-fluid blur-image" />
             </div>

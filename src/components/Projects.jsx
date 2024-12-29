@@ -29,7 +29,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section p-md-5 p-3 bebasNeue">
+    <section id="projects" className="projects-section p-lg-5 p-3 bebasNeue">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 text-center bradleyHand">
@@ -39,8 +39,8 @@ const Projects = () => {
         <div className="row mb-5 slider">
           <div className="col-12 slide-track">
             {projects.map((project, index) => (
-              <div key={index} className="col-md-6">
-                <div className="card projects-card p-3 mt-md-5 slide">
+              <div key={index} className="col-lg-6 col-md-8 col-12">
+                <div className="card projects-card p-3 mt-md-5 mt-3 slide">
                   <img src={project.image} alt={project.title} className="img-fluid" />
                   <h3 className="mt-3">{project.title}</h3>
                   <p>{project.description}</p>
