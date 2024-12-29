@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../css/project.css";
 import projectImage1 from "../images/project-image-1.png";
 import projectImage3 from "../images/project-image-2.png";
 
 const Projects = () => {
+  const sliderRef = useRef(null);
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
+
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("contact");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleMouseDown = (e) => {
+    isDragging = true;
+    sliderRef.current.style.cursor = "grabbing";
+    startX = e.pageX - sliderRef.current.offsetLeft;
+    scrollLeft = sliderRef.current.scrollLeft;
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    sliderRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUpOrLeave = () => {
+    isDragging = false;
+    sliderRef.current.style.cursor = "grab";
+  };
+
   const projects = [
     {
       image: projectImage1,
@@ -36,12 +62,24 @@ const Projects = () => {
             <h1 className="section-heading-underline">MY WORKS</h1>
           </div>
         </div>
-        <div className="row mb-5 slider">
+        <div
+          className="row mb-5 slider"
+          ref={sliderRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUpOrLeave}
+          onMouseLeave={handleMouseUpOrLeave}
+          style={{ cursor: "grab", overflow: "hidden" }}
+        >
           <div className="col-12 slide-track">
             {projects.map((project, index) => (
               <div key={index} className="col-lg-6 col-md-8 col-12">
                 <div className="card projects-card p-3 mt-md-5 mt-3 slide">
-                  <img src={project.image} alt={project.title} className="img-fluid" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="img-fluid"
+                  />
                   <h3 className="mt-3">{project.title}</h3>
                   <p>{project.description}</p>
                 </div>

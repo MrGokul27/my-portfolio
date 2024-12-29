@@ -65,6 +65,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .projects-section {
+        min-height: 100%;
+    }
+
     .projects-section .projects-card h3 {
         font-size: 28px;
     }

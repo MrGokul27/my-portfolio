@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import "../css/contact.css";
 
 const Contact = () => {
+  const [form] = Form.useForm(); // Create form instance
+
   const onFinish = (values) => {
     console.log("Form values: ", values);
 
@@ -24,6 +26,7 @@ const Contact = () => {
       .then(
         () => {
           message.success("Message sent successfully!");
+          form.resetFields(); // Clear the form fields
         },
         (error) => {
           console.error("Failed to send email:", error);
@@ -44,6 +47,7 @@ const Contact = () => {
           <div className="col-lg-7 col-md-10">
             <div className="form-curve my-md-5">
               <Form
+                form={form} // Associate form instance
                 name="contact_form"
                 onFinish={onFinish}
                 layout="vertical"
@@ -146,7 +150,7 @@ const Contact = () => {
                     </Form.Item>
                   </Col>
                   <Col xs={24} md={12} className="text-md-end text-center">
-                    <div className="social-icons  mt-3">
+                    <div className="social-icons mt-3">
                       <a
                         href="https://www.linkedin.com/in/gokulanath-jp-464465261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         target="_blank"
