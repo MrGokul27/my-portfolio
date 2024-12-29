@@ -164,6 +164,10 @@
   .about-second-sec {
     padding-bottom: 110px;
   }
+
+  .blur-image {
+    filter: blur(0px);
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
