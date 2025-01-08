@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       {/* Theme Toggle Button */}
-      <section id="home" className="hero-section px-lg-5 px-3 bradleyHand">
+      <section id="home" className="hero-section px-lg-5 px-3 poppins">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-12 parallax-effect">
@@ -63,16 +63,11 @@ const Home = () => {
                 ) : (
                   <img src={jpDark} alt="" className="img-fluid jp-img" />
                 )}
-                <h2>
+                <h2 className="bradleyHand">
                   <span>I AM</span> GOKULANATH
                 </h2>
                 <p className="mt-4">
-                  Results-driven Web Developer with 1+ years of experience in
-                  creating responsive, user-centric websites and applications.
-                  Skilled in ReactJS, JavaScript, Bootstrap 5, HTML, CSS. Adept
-                  at optimizing website performance, collaborating with
-                  cross-functional teams, and delivering projects on time with a
-                  focus on scalability and aesthetics.
+                  Creative Web Developer with 1.5 + year of experience and a passion for developing user-friendly websites. Collaborated with a team of developers to implement responsive web design, ensuring optimal user experience across different devices and screen sizes.
                 </p>
                 <div className="d-md-flex align-items-center justify-content-end mt-md-5 mt-3">
                   <div className="resume-button me-md-5 mt-md-0 mt-4 text-md-end text-center">

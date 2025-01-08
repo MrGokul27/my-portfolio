@@ -5,19 +5,19 @@
 }
 
 .about-section h2 {
-  font-size: 36px;
-  letter-spacing: 2px;
+  font-size: 34px;
+  font-weight: 600;
   text-decoration: underline;
 }
 
 .about-section h3 {
   font-size: 24px;
-  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .about-section h4 {
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .about-section .about-style-txt {

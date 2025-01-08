@@ -26,11 +26,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section p-lg-5 p-3 bebasNeue">
+    <section id="skills" className="skills-section p-lg-5 p-3 poppins">
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <div className="col-lg-10 text-center bradleyHand">
-            <h1 className="section-heading-underline">MY SKILLS</h1>
+          <div className="col-lg-10 text-center">
+            <h1 className="section-heading-underline bradleyHand">MY SKILLS</h1>
             <p className="mt-4">
               Proficient in Frontend Development using ReactJS, JavaScript,
               Bootstrap 5, HTML5, and CSS3, with expertise in creating responsive

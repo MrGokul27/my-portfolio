@@ -28,8 +28,9 @@
 
 .skills-section p {
     color: var(--text-color);
-    letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .skills-section .skills-card {
@@ -59,7 +60,6 @@
 
 @media screen and (max-width: 768px) {
     .skills-section p {
-        font-size: 18px;
         text-align: justify;
     }
 }

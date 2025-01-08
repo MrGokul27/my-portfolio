@@ -12,7 +12,7 @@ const About = () => {
     }
   };
   return (
-    <section id="about" className="about-section p-lg-5 p-3 bebasNeue">
+    <section id="about" className="about-section p-lg-5 p-3 poppins">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 text-center bradleyHand">
@@ -41,7 +41,7 @@ const About = () => {
               </h3>
               <h4>( 2016 - 2018 )</h4>
             </div>
-            <div className="my-tech-skills position-absolute text-center" onClick={scrollToNextSection}
+            <div className="my-tech-skills position-absolute text-center bebasNeue" onClick={scrollToNextSection}
               style={{ cursor: "pointer" }}>
               <p className="mb-0">MY TECH </p>
               <span>SKILLS</span>

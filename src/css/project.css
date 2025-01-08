@@ -22,15 +22,14 @@
 }
 
 .projects-section .projects-card h3 {
-    font-size: 32px;
-    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .projects-section .projects-card p {
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
 }
 
 .projects-section .projects-card img {
@@ -38,37 +37,7 @@
     width: 100%;
 }
 
-/* Scroll animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.projects-section .slider {
-    overflow: hidden;
-}
-
-.projects-section .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    animation-play-state: running;
-    transition: transform 0.3s ease;
-}
-
-.projects-section .slide-track:hover {
-    animation-play-state: paused;
-}
-
 @media screen and (max-width: 768px) {
-    .projects-section .projects-card h3 {
-        font-size: 28px;
-    }
-
     .projects-section .projects-card p {
         font-size: 16px;
     }

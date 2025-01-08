@@ -13,10 +13,9 @@
 }
 
 .hero-section p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 33px;
-  letter-spacing: 1px;
   color: var(--nav-text-color);
 }
 
@@ -56,8 +55,8 @@
 /* ******************** */
 
 .hero-section .dark-resume-btn {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   color: var(--nav-text-color);
   box-shadow: 0px 0px 10px 0px var(--highlight-color);
   border-radius: 25px;
@@ -91,7 +90,6 @@
   }
 
   .hero-section p {
-    font-size: 18px;
     text-align: justify;
   }
 
