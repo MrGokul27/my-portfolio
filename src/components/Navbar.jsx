@@ -80,6 +80,11 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <a href="/tools">
+              My Tools
+            </a>
+          </li>
+          <li>
             <a href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
               CONTACT
             </a>

@@ -1,0 +1,43 @@
+.tools-section {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 80vh;
+}
+
+.tools-section p {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.tools-section .tools-card {
+    width: 150px;
+    height: 150px;
+    background-color: #202022;
+    pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out;
+    box-shadow: 4px 4px 10px rgba(179, 54, 255, 0.5);
+
+    &:nth-child(even) {
+        transform: translateX(8px);
+    }
+
+    &:nth-child(n) {
+        transform: rotate(0deg);
+    }
+}
+
+.tools-section .tools-sec-card:hover .tools-card {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(179, 54, 255, 0.8);
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .tools-section p {
+        text-align: justify;
+    }
+}

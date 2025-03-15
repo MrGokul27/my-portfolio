@@ -7,7 +7,7 @@
   color: var(--text-color);
   position: relative;
   overflow: hidden;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
 .contact-section::before {

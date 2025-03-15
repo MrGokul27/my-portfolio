@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import "../css/contact.css";
 
 const Contact = () => {
-  const [form] = Form.useForm(); // Create form instance
+  const [form] = Form.useForm();
 
   const onFinish = (values) => {
     console.log("Form values: ", values);
@@ -26,7 +26,7 @@ const Contact = () => {
       .then(
         () => {
           message.success("Message sent successfully!");
-          form.resetFields(); // Clear the form fields
+          form.resetFields();
         },
         (error) => {
           console.error("Failed to send email:", error);
@@ -47,13 +47,13 @@ const Contact = () => {
           <div className="col-lg-7 col-md-10">
             <div className="form-curve my-md-5">
               <Form
-                form={form} // Associate form instance
+                form={form}
                 name="contact_form"
                 onFinish={onFinish}
                 layout="vertical"
                 className="contact-form p-md-5 p-3"
               >
-                {/* First Name and Last Name */}
+                {/* First Name and Last Name Fields */}
                 <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
@@ -85,7 +85,7 @@ const Contact = () => {
                   </Col>
                 </Row>
 
-                {/* Email and Phone Number */}
+                {/* Email and Phone Number Fields */}
                 <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
@@ -118,7 +118,7 @@ const Contact = () => {
                   </Col>
                 </Row>
 
-                {/* Message */}
+                {/* Message Field */}
                 <Row gutter={[{ xs: 16, sm: 24, md: 32, lg: 50, xl: 150 }, 16]}>
                   <Col xs={24} md={12}>
                     <Form.Item
