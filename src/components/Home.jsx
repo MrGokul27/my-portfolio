@@ -67,7 +67,12 @@ const Home = () => {
                   <span>I AM</span> GOKULANATH
                 </h2>
                 <p className="mt-4">
-                  Creative Web Developer with 1.8 years of experience and a passion for developing user-friendly websites. Collaborated with a team of developers to implement responsive web design, ensuring optimal user experience across different devices and screen sizes.
+                  Frontend Developer with "2+ years" of experience building
+                  responsive, user-focused web applications. Proficient in
+                  React.js, Redux, JavaScript, Bootstrap 5, HTML,
+                  and CSS, with a solid grasp of front-end development
+                  principles, UI/UX best practices, and modern development
+                  workflows.
                 </p>
                 <div className="d-md-flex align-items-center justify-content-end mt-md-5 mt-3">
                   <div className="resume-button me-md-5 mt-md-0 mt-4 text-md-end text-center">
